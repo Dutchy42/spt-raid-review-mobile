@@ -1,9 +1,10 @@
 .home__profile-card {
     width: 100%;
     max-width: 400px;
+    min-width: 225px;
     margin: auto;
     padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .home__profile-card-image {
@@ -34,6 +35,8 @@
     gap: 1rem;
     padding: 1rem;
     justify-items: center;
+    overflow-y: auto;
+    max-height: calc(100vh - 160px);
 }
 
 /* Mobile-friendly styles */
@@ -43,7 +46,6 @@
         max-width: 100%;
         margin-bottom: 1rem;
         padding: 0.5rem;
-        box-shadow: none;
         overflow: hidden;
         max-height: 250px;
     }
